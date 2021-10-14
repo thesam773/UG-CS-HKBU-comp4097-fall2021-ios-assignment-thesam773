@@ -8,14 +8,23 @@
 import SwiftUI
 
 struct MallsView: View {
-
+    @EnvironmentObject var prospects: Prospects
+    @EnvironmentObject var qpons: Qpon
+    
+    
+    
+//    init() {
+//      self.qpon = qpon
+//    }
+    
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        Text("People:\(qpons.qponsName)")
+//        let _ = print("DLLLMMMMMMM\(qpon)")
     }
 }
 
 struct MallsView_Previews: PreviewProvider {
     static var previews: some View {
-        MallsView()
+        MallsView().environmentObject(Qpon())
     }
 }

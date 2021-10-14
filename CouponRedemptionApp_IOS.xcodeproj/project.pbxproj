@@ -14,6 +14,9 @@
 		4D220B5C271603E300C4018A /* CouponRedemption.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 4D220B5A271603E300C4018A /* CouponRedemption.xcdatamodeld */; };
 		4D220B5E2716047D00C4018A /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D220B5D2716047D00C4018A /* LoginView.swift */; };
 		4D220B602716CA2200C4018A /* CouponDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D220B5F2716CA2200C4018A /* CouponDetailView.swift */; };
+		4D220B622717EC5100C4018A /* Prospect.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D220B612717EC5000C4018A /* Prospect.swift */; };
+		4D220B642718215100C4018A /* Qpon.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D220B632718215000C4018A /* Qpon.swift */; };
+		4D220B682718A16C00C4018A /* MapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D220B672718A16C00C4018A /* MapView.swift */; };
 		4D70BFCD2715F10400510709 /* CouponRedemptionApp_IOSApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D70BFCC2715F10400510709 /* CouponRedemptionApp_IOSApp.swift */; };
 		4D70BFCF2715F10400510709 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D70BFCE2715F10400510709 /* ContentView.swift */; };
 		4D70BFD12715F10A00510709 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4D70BFD02715F10A00510709 /* Assets.xcassets */; };
@@ -48,6 +51,9 @@
 		4D220B5B271603E300C4018A /* CouponRedemption.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = CouponRedemption.xcdatamodel; sourceTree = "<group>"; };
 		4D220B5D2716047D00C4018A /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
 		4D220B5F2716CA2200C4018A /* CouponDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CouponDetailView.swift; sourceTree = "<group>"; };
+		4D220B612717EC5000C4018A /* Prospect.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Prospect.swift; sourceTree = "<group>"; };
+		4D220B632718215000C4018A /* Qpon.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Qpon.swift; sourceTree = "<group>"; };
+		4D220B672718A16C00C4018A /* MapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapView.swift; sourceTree = "<group>"; };
 		4D70BFC92715F10400510709 /* CouponRedemptionApp_IOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CouponRedemptionApp_IOS.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4D70BFCC2715F10400510709 /* CouponRedemptionApp_IOSApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CouponRedemptionApp_IOSApp.swift; sourceTree = "<group>"; };
 		4D70BFCE2715F10400510709 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -119,6 +125,9 @@
 				4D220B582715F68D00C4018A /* UserView.swift */,
 				4D220B5D2716047D00C4018A /* LoginView.swift */,
 				4D220B5F2716CA2200C4018A /* CouponDetailView.swift */,
+				4D220B612717EC5000C4018A /* Prospect.swift */,
+				4D220B632718215000C4018A /* Qpon.swift */,
+				4D220B672718A16C00C4018A /* MapView.swift */,
 			);
 			path = CouponRedemptionApp_IOS;
 			sourceTree = "<group>";
@@ -279,10 +288,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				4D70BFCF2715F10400510709 /* ContentView.swift in Sources */,
+				4D220B682718A16C00C4018A /* MapView.swift in Sources */,
 				4D220B592715F68D00C4018A /* UserView.swift in Sources */,
 				4D70BFCD2715F10400510709 /* CouponRedemptionApp_IOSApp.swift in Sources */,
 				4D220B572715F65600C4018A /* CoinsView.swift in Sources */,
 				4D220B552715F64700C4018A /* MallsView.swift in Sources */,
+				4D220B642718215100C4018A /* Qpon.swift in Sources */,
+				4D220B622717EC5100C4018A /* Prospect.swift in Sources */,
 				4D220B5C271603E300C4018A /* CouponRedemption.xcdatamodeld in Sources */,
 				4D220B602716CA2200C4018A /* CouponDetailView.swift in Sources */,
 				4D220B512715F32200C4018A /* CouponView.swift in Sources */,

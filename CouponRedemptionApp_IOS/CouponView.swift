@@ -101,7 +101,6 @@ extension CouponView {
                 self.coupons = coupons
             }
         }
-        
         task.resume()
     }
 }

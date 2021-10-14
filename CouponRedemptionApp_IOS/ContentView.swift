@@ -8,6 +8,9 @@
 import SwiftUI
 
 struct ContentView: View {
+    var prospects = Prospects()
+    @StateObject var qpons = Qpon()
+    
     var body: some View {
             TabView {
                 CouponView().tabItem {
@@ -27,6 +30,8 @@ struct ContentView: View {
                     Text("User")
                 }
             }
+            .environmentObject(prospects)
+            .environmentObject(qpons)
         }
 }
 

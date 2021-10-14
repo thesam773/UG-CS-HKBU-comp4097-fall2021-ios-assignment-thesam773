@@ -9,7 +9,18 @@ import SwiftUI
 
 struct CoinsView: View {
     var body: some View {
-        Text("Coins")
+        List {
+            NavigationLink(destination: LoginView()){
+                Text("Coins <= 300")
+            }
+            NavigationLink(destination: LoginView()){
+                Text("300 < Coins < 600")
+            }
+            NavigationLink(destination: LoginView()){
+                Text("Coins >= 600")
+            }
+        }
+        
     }
 }
 

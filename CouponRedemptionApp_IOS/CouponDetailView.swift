@@ -15,7 +15,6 @@ struct CouponDetailView: View {
     var coupon_coin = 0
     var coupon_mall = ""
     var coupon_expirydate = ""
-    
     let coupons: [Coupons] = []
     
     init(coupon_id: Int, coupon_image: String, coupon_restaurant: String, coupon_title: String, coupon_coin: Int, coupon_mall: String, coupon_expirydate: String){
@@ -29,64 +28,82 @@ struct CouponDetailView: View {
     }
     
     var body: some View {
-        VStack{
-            if #available(iOS 15.0, *) {
-                AsyncImage(url: URL(string: coupon_image)){ image in
-                    image.resizable()
-                } placeholder: {
-                    ProgressView()
-                }
-                .scaledToFit()
-            } else {
-                // Fallback on earlier versions
-            }
-            VStack(){
-                Text("\(coupon_restaurant)")
-                    .bold()
-                    .font(.system(size: 25))
-                    .padding(.bottom,5)
-                Text("\(coupon_title)")
-                HStack{
-                    Text("Mall: \(coupon_mall)")
-                    Text("Coin: \(coupon_coin)")
-                }
-                Text("Expiry Date: \(coupon_expirydate)")
-                HStack{
-                    Button(action: {}){
-                        Text("Redeem")
-                            .fontWeight(.bold)
-                            .padding()
-                            .background(Color.blue)
-                            .cornerRadius(20)
-                            .foregroundColor(.white)
-                            .padding(.bottom, 10)
+            VStack{
+                if #available(iOS 15.0, *) {
+                    AsyncImage(url: URL(string: coupon_image)){ image in
+                        image.resizable()
+                    } placeholder: {
+                        ProgressView()
                     }
-                    Button(action: {}){
-                        Text("Address")
-                            .fontWeight(.bold)
-                            .padding()
-                            .background(Color.blue)
-                            .cornerRadius(20)
-                            .foregroundColor(.white)
-                            .padding(.bottom, 10)
+                    .scaledToFit()
+                } else {
+                    // Fallback on earlier versions
+                }
+                VStack(){
+                    Text("\(coupon_restaurant)")
+                        .bold()
+                        .font(.system(size: 25))
+                        .padding(.bottom,5)
+                    Text("\(coupon_title)")
+                    HStack{
+                        Text("Mall: \(coupon_mall)")
+                        Text("Coin: \(coupon_coin)")
+                    }
+                    Text("Expiry Date: \(coupon_expirydate)")
+                    HStack{
+                        Button(action: {}){
+                            Text("Redeem")
+                                .fontWeight(.bold)
+                                .padding()
+                                .background(Color.blue)
+                                .cornerRadius(20)
+                                .foregroundColor(.white)
+                                .padding(.bottom, 10)
+                        }
+                        NavigationLink(destination: MapView(coupon_mall: coupon_mall)){
+                            Text("Address")
+                                .fontWeight(.bold)
+                                .padding()
+                                .background(Color.blue)
+                                .cornerRadius(20)
+                                .foregroundColor(.white)
+                                .padding(.bottom, 10)
+                        }
+//                        Button(action: {}){
+//                            Text("Redeem")
+//                                .fontWeight(.bold)
+//                                .padding()
+//                                .background(Color.blue)
+//                                .cornerRadius(20)
+//                                .foregroundColor(.white)
+//                                .padding(.bottom, 10)
+//                        }
+//                        Button(action: {}){
+//                            Text("Address")
+//                                .fontWeight(.bold)
+//                                .padding()
+//                                .background(Color.blue)
+//                                .cornerRadius(20)
+//                                .foregroundColor(.white)
+//                                .padding(.bottom, 10)
+//                        }
                     }
                 }
+                .frame(
+                    maxWidth: .infinity
+                )
+                .font(.system(size: 20))
+                .border(Color.black)
             }
             .frame(
-                maxWidth: .infinity
-            )
-            .font(.system(size: 20))
-            .border(Color.black)
+               minWidth: 0,
+               maxWidth: .infinity,
+               minHeight: 0,
+               maxHeight: .infinity,
+               alignment: .topLeading
+             )
+            .padding()
         }
-        .frame(
-           minWidth: 0,
-           maxWidth: .infinity,
-           minHeight: 0,
-           maxHeight: .infinity,
-           alignment: .topLeading
-         )
-        .padding()
-    }
 }
 
 struct CouponDetailView_Previews: PreviewProvider {
