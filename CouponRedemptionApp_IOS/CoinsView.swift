@@ -9,18 +9,21 @@ import SwiftUI
 
 struct CoinsView: View {
     var body: some View {
-        List {
-            NavigationLink(destination: LoginView()){
-                Text("Coins <= 300")
+        NavigationView{
+            List {
+                NavigationLink(destination: CoinSubView(greaterThan: 0, lessThan: 300)){
+                    Text("Coins <= 300")
+                }
+                NavigationLink(destination: CoinSubView(greaterThan: 301, lessThan: 599)){
+                    Text("300 < Coins < 600")
+                }
+                NavigationLink(destination: CoinSubView(greaterThan: 600, lessThan: 9999999)){
+                    Text("Coins >= 600")
+                }
             }
-            NavigationLink(destination: LoginView()){
-                Text("300 < Coins < 600")
-            }
-            NavigationLink(destination: LoginView()){
-                Text("Coins >= 600")
-            }
+            .navigationBarHidden(true)
+            .navigationBarBackButtonHidden(true)
         }
-        
     }
 }
 

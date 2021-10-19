@@ -15,8 +15,10 @@
 		4D220B5E2716047D00C4018A /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D220B5D2716047D00C4018A /* LoginView.swift */; };
 		4D220B602716CA2200C4018A /* CouponDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D220B5F2716CA2200C4018A /* CouponDetailView.swift */; };
 		4D220B622717EC5100C4018A /* Prospect.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D220B612717EC5000C4018A /* Prospect.swift */; };
-		4D220B642718215100C4018A /* Qpon.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D220B632718215000C4018A /* Qpon.swift */; };
 		4D220B682718A16C00C4018A /* MapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D220B672718A16C00C4018A /* MapView.swift */; };
+		4D220B6F271C23BD00C4018A /* CouponMall+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D220B6D271C23BC00C4018A /* CouponMall+CoreDataClass.swift */; };
+		4D220B72271C24BA00C4018A /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D220B71271C24BA00C4018A /* Persistence.swift */; };
+		4D220B75271C726200C4018A /* CouponData+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D220B73271C726000C4018A /* CouponData+CoreDataClass.swift */; };
 		4D70BFCD2715F10400510709 /* CouponRedemptionApp_IOSApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D70BFCC2715F10400510709 /* CouponRedemptionApp_IOSApp.swift */; };
 		4D70BFCF2715F10400510709 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D70BFCE2715F10400510709 /* ContentView.swift */; };
 		4D70BFD12715F10A00510709 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4D70BFD02715F10A00510709 /* Assets.xcassets */; };
@@ -24,6 +26,11 @@
 		4D70BFDE2715F10A00510709 /* CouponRedemptionApp_IOSTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D70BFDD2715F10A00510709 /* CouponRedemptionApp_IOSTests.swift */; };
 		4D70BFE82715F10A00510709 /* CouponRedemptionApp_IOSUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D70BFE72715F10A00510709 /* CouponRedemptionApp_IOSUITests.swift */; };
 		4D70BFEA2715F10A00510709 /* CouponRedemptionApp_IOSUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D70BFE92715F10A00510709 /* CouponRedemptionApp_IOSUITestsLaunchTests.swift */; };
+		4DC354AF271D5CE40026895F /* ShowAllCouponView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DC354AE271D5CE40026895F /* ShowAllCouponView.swift */; };
+		4DC354EC271DDB930026895F /* MallSubView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DC354EB271DDB930026895F /* MallSubView.swift */; };
+		4DC354EE271DF0B00026895F /* CoinSubView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DC354ED271DF0B00026895F /* CoinSubView.swift */; };
+		4DC354F0271DFDC50026895F /* MyRedemptionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DC354EF271DFDC50026895F /* MyRedemptionView.swift */; };
+		4DC354F3271E06B50026895F /* User+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DC354F1271E06B50026895F /* User+CoreDataClass.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -52,8 +59,10 @@
 		4D220B5D2716047D00C4018A /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
 		4D220B5F2716CA2200C4018A /* CouponDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CouponDetailView.swift; sourceTree = "<group>"; };
 		4D220B612717EC5000C4018A /* Prospect.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Prospect.swift; sourceTree = "<group>"; };
-		4D220B632718215000C4018A /* Qpon.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Qpon.swift; sourceTree = "<group>"; };
 		4D220B672718A16C00C4018A /* MapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapView.swift; sourceTree = "<group>"; };
+		4D220B6D271C23BC00C4018A /* CouponMall+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CouponMall+CoreDataClass.swift"; sourceTree = "<group>"; };
+		4D220B71271C24BA00C4018A /* Persistence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Persistence.swift; sourceTree = "<group>"; };
+		4D220B73271C726000C4018A /* CouponData+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CouponData+CoreDataClass.swift"; sourceTree = "<group>"; };
 		4D70BFC92715F10400510709 /* CouponRedemptionApp_IOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CouponRedemptionApp_IOS.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4D70BFCC2715F10400510709 /* CouponRedemptionApp_IOSApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CouponRedemptionApp_IOSApp.swift; sourceTree = "<group>"; };
 		4D70BFCE2715F10400510709 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -64,6 +73,11 @@
 		4D70BFE32715F10A00510709 /* CouponRedemptionApp_IOSUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CouponRedemptionApp_IOSUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		4D70BFE72715F10A00510709 /* CouponRedemptionApp_IOSUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CouponRedemptionApp_IOSUITests.swift; sourceTree = "<group>"; };
 		4D70BFE92715F10A00510709 /* CouponRedemptionApp_IOSUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CouponRedemptionApp_IOSUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		4DC354AE271D5CE40026895F /* ShowAllCouponView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShowAllCouponView.swift; sourceTree = "<group>"; };
+		4DC354EB271DDB930026895F /* MallSubView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MallSubView.swift; sourceTree = "<group>"; };
+		4DC354ED271DF0B00026895F /* CoinSubView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoinSubView.swift; sourceTree = "<group>"; };
+		4DC354EF271DFDC50026895F /* MyRedemptionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyRedemptionView.swift; sourceTree = "<group>"; };
+		4DC354F1271E06B50026895F /* User+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "User+CoreDataClass.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,6 +108,9 @@
 		4D70BFC02715F10400510709 = {
 			isa = PBXGroup;
 			children = (
+				4DC354F1271E06B50026895F /* User+CoreDataClass.swift */,
+				4D220B73271C726000C4018A /* CouponData+CoreDataClass.swift */,
+				4D220B6D271C23BC00C4018A /* CouponMall+CoreDataClass.swift */,
 				4D70BFCB2715F10400510709 /* CouponRedemptionApp_IOS */,
 				4D70BFDC2715F10A00510709 /* CouponRedemptionApp_IOSTests */,
 				4D70BFE62715F10A00510709 /* CouponRedemptionApp_IOSUITests */,
@@ -114,6 +131,7 @@
 		4D70BFCB2715F10400510709 /* CouponRedemptionApp_IOS */ = {
 			isa = PBXGroup;
 			children = (
+				4DC354AE271D5CE40026895F /* ShowAllCouponView.swift */,
 				4D70BFCC2715F10400510709 /* CouponRedemptionApp_IOSApp.swift */,
 				4D70BFCE2715F10400510709 /* ContentView.swift */,
 				4D70BFD02715F10A00510709 /* Assets.xcassets */,
@@ -126,8 +144,11 @@
 				4D220B5D2716047D00C4018A /* LoginView.swift */,
 				4D220B5F2716CA2200C4018A /* CouponDetailView.swift */,
 				4D220B612717EC5000C4018A /* Prospect.swift */,
-				4D220B632718215000C4018A /* Qpon.swift */,
 				4D220B672718A16C00C4018A /* MapView.swift */,
+				4D220B71271C24BA00C4018A /* Persistence.swift */,
+				4DC354EB271DDB930026895F /* MallSubView.swift */,
+				4DC354ED271DF0B00026895F /* CoinSubView.swift */,
+				4DC354EF271DFDC50026895F /* MyRedemptionView.swift */,
 			);
 			path = CouponRedemptionApp_IOS;
 			sourceTree = "<group>";
@@ -288,16 +309,23 @@
 			buildActionMask = 2147483647;
 			files = (
 				4D70BFCF2715F10400510709 /* ContentView.swift in Sources */,
+				4D220B75271C726200C4018A /* CouponData+CoreDataClass.swift in Sources */,
 				4D220B682718A16C00C4018A /* MapView.swift in Sources */,
+				4DC354F3271E06B50026895F /* User+CoreDataClass.swift in Sources */,
+				4DC354F0271DFDC50026895F /* MyRedemptionView.swift in Sources */,
+				4DC354EC271DDB930026895F /* MallSubView.swift in Sources */,
 				4D220B592715F68D00C4018A /* UserView.swift in Sources */,
+				4D220B72271C24BA00C4018A /* Persistence.swift in Sources */,
 				4D70BFCD2715F10400510709 /* CouponRedemptionApp_IOSApp.swift in Sources */,
+				4D220B6F271C23BD00C4018A /* CouponMall+CoreDataClass.swift in Sources */,
 				4D220B572715F65600C4018A /* CoinsView.swift in Sources */,
 				4D220B552715F64700C4018A /* MallsView.swift in Sources */,
-				4D220B642718215100C4018A /* Qpon.swift in Sources */,
 				4D220B622717EC5100C4018A /* Prospect.swift in Sources */,
+				4DC354AF271D5CE40026895F /* ShowAllCouponView.swift in Sources */,
 				4D220B5C271603E300C4018A /* CouponRedemption.xcdatamodeld in Sources */,
 				4D220B602716CA2200C4018A /* CouponDetailView.swift in Sources */,
 				4D220B512715F32200C4018A /* CouponView.swift in Sources */,
+				4DC354EE271DF0B00026895F /* CoinSubView.swift in Sources */,
 				4D220B5E2716047D00C4018A /* LoginView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
