@@ -8,23 +8,30 @@
 import SwiftUI
 
 struct MallsView: View {
+    
     @EnvironmentObject var prospects: Prospects
-    @EnvironmentObject var qpons: Qpon
+    @FetchRequest(entity: CouponMall.entity(), sortDescriptors: [])
     
-    
-    
-//    init() {
-//      self.qpon = qpon
-//    }
+    var couponMall: FetchedResults<CouponMall>
     
     var body: some View {
-        Text("People:\(qpons.qponsName)")
-//        let _ = print("DLLLMMMMMMM\(qpon)")
+        NavigationView{
+            List(couponMall) { ml in
+                NavigationLink(destination: MallSubView(mall: ml.mall ?? "123")){
+                    HStack {
+                        Text(ml.mall ?? "123")
+                    }
+                }
+                .navigationBarHidden(true)
+                .navigationBarBackButtonHidden(true)
+            }
+        }
+        .navigationTitle("Malls")
     }
 }
 
 struct MallsView_Previews: PreviewProvider {
     static var previews: some View {
-        MallsView().environmentObject(Qpon())
+        MallsView()
     }
 }
